@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <meta charset="utf-8" />
+    <title>Catching Stars</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.js"
+      integrity="sha512-z1Ws0aVF+gkSR/9Wo1d82UX7tOb80rPIa55NOTpptJr+EbyhfszWvw5nKMPn0il7T2AsNPgNjlvadGAgL/HOrA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/paperscript"
+      canvas="myCanvas"
+      src="js/catchingStars.js"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      style="position: absolute; background-color: black; z-index: -1"
+      resize
+    ></canvas>
+    <div id="constellationInputWrapper">
+      <input
+        type="text"
+        id="constellationInput"
+        placeholder="Find a Constellation"
+        autocomplete="off"
+        maxlength="20"
+      />
+    </div>
+  </body>
+</html>

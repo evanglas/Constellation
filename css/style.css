@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+
+#constellationInputWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#constellationInput {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 1;
+  color: white;
+  background-color: transparent;
+  border: none;
+  caret-color: transparent;
+  font-size: 100px;
+}
+
+#constellationInput:focus {
+  outline: none;
+}
